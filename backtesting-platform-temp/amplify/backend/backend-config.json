@@ -21,5 +21,23 @@
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
+  },
+  "parameters": {
+    "AMPLIFY_function_backtestingLambda_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "backtestingLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_backtestingLambda_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "backtestingLambda"
+        }
+      ]
+    }
   }
 }

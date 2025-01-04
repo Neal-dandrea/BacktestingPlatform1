@@ -13,7 +13,13 @@
     },
     "categories": {
       "function": {
-        "backtestingLambda": {}
+        "backtestingLambda": {
+          "deploymentBucketName": "amplify-backtestingplatformt-dev-e9e06-deployment",
+          "s3Key": "amplify-builds/backtestingLambda-73696b6a65357a785070-build.zip"
+        }
+      },
+      "api": {
+        "backtestingAPI": {}
       }
     }
   }

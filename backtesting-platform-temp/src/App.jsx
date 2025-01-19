@@ -7,6 +7,10 @@ import Backtests from './pages/Backtests';
 import Login from './pages/Login';
 import Quantum from './pages/Quantum'
 
+import { Amplify } from 'aws-amplify';
+import awsconfig from './aws-exports';
+Amplify.configure(awsconfig);
+
 function App() {
     return (
         <Router>

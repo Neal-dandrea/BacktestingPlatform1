@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { API } from 'aws-amplify';
 
-const apiName = 'apibacktestingAPI'; // same as in your Backtests page
+const apiName = 'backtestingLambda-dev'; // same as in your Backtests page
 const path = '/quantum';             // or whatever your backend route is
 
 function Quantum() {

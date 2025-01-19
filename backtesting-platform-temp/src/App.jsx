@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Strategies from './pages/Strategies';
 import Backtests from './pages/Backtests';
 import Login from './pages/Login';
+import Quantum from './pages/Quantum'
 
 function App() {
     return (
@@ -15,6 +16,8 @@ function App() {
                 <Route path="/strategies" element={<Strategies />} />
                 <Route path="/backtests" element={<Backtests />} />
                 <Route path="/login" element={<Login />} />
+                <Route path="/quantum" element={<Quantum />} />
+
             </Routes>
         </Router>
     );

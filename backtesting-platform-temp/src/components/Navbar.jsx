@@ -1,5 +1,6 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Button } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
@@ -8,10 +9,21 @@ function Navbar() {
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                     Backtesting Platform
                 </Typography>
-                <Button color="inherit">Home</Button>
-                <Button color="inherit">Strategies</Button>
-                <Button color="inherit">Backtests</Button>
-                <Button color="inherit">Login</Button>
+                <Button color="inherit" component={Link} to="/">
+                    Home
+                </Button>
+                <Button color="inherit" component={Link} to="/strategies">
+                    Strategies
+                </Button>
+                <Button color="inherit" component={Link} to="/backtests">
+                    Backtests
+                </Button>
+                <Button color="inherit" component={Link} to="/quantum">
+                    Quantum
+                </Button>
+                <Button color="inherit" component={Link} to="/login">
+                    Login
+                </Button>
             </Toolbar>
         </AppBar>
     );

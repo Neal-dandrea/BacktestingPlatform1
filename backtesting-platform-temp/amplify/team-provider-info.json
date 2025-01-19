@@ -15,7 +15,7 @@
       "function": {
         "backtestingLambda": {
           "deploymentBucketName": "amplify-backtestingplatformt-dev-e9e06-deployment",
-          "s3Key": "amplify-builds/backtestingLambda-76496331443857766546-build.zip"
+          "s3Key": "amplify-builds/backtestingLambda-73696b6a65357a785070-build.zip"
         }
       },
       "api": {

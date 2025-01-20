@@ -11,7 +11,7 @@ function Quantum() {
         setError(null);
 
         try {
-            const response = await fetch('http://54.86.0.12:8080/test');
+            const response = await fetch('https://x91quab646.execute-api.us-east-1.amazonaws.com/prod/test');
 
             if (!response.ok) {
                 throw new Error(`Error: ${response.status} - ${response.statusText}`);

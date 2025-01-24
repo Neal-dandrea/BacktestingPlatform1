@@ -4,9 +4,9 @@ import { Container } from '@mui/material';
 
 function Backtests() {
     return (
-        <Container maxWidth={false} sx={{ padding: '2rem' }}>
+       <div>
             <h2>View Backtest Results</h2>
-        </Container>
+        </div>
     );
 }
 

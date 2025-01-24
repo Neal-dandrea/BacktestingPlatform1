@@ -4,7 +4,7 @@ import { Container, Typography } from '@mui/material';
 
 function Strategies() {
     return (
-        <Container maxWidth={false} sx={{ padding: '2rem' }}>
+        <div>
             <Typography variant="h4" component="h2" gutterBottom align="center">
                 Your Strategies
             </Typography>
@@ -13,7 +13,7 @@ function Strategies() {
                 <Card title="Strategy 2" content="Description of Strategy 2" />
                 <Card title="Strategy 3" content="Description of Strategy 3" />
             </div>
-        </Container>
+        </div>
     );
 }
 

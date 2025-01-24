@@ -3,7 +3,7 @@ import { Box, Typography, Container } from '@mui/material';
 
 const Home = () => {
     return (
-        <Container maxWidth={false} sx={{ padding: '2rem' }}>
+        
             <Box 
                 display="flex" 
                 justifyContent="center" 
@@ -23,7 +23,7 @@ const Home = () => {
                 </Typography>
 
             </Box>
-        </Container>
+        
     );
 }
 

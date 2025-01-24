@@ -1,25 +1,28 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Container } from '@mui/material';
 
 const Home = () => {
     return (
-        <Container maxWidth="lg" sx={{ padding: '2rem' }}>
-            <div>
+        <Container maxWidth={false} sx={{ padding: '2rem' }}>
             <Box 
                 display="flex" 
                 justifyContent="center" 
                 alignItems="center" 
                 height="100vh"
                 flexDirection="column"
+                
             >
-                <Typography variant="h4" gutterBottom>
+                <Typography variant="h4" color="secondary" gutterBottom>
                     Welcome to the Backtesting Platform
                 </Typography>
-                <Typography variant="h6">
+                <Typography variant="body1" color="textSecondary">
                     Optimize your trading strategies with ease.
                 </Typography>
+                <Typography>
+                    Matt is a goon. He always be gooning. 
+                </Typography>
+
             </Box>
-            </div>
         </Container>
     );
 }

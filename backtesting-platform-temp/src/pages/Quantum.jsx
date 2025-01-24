@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Container } from '@mui/material';
+
 
 function Quantum() {
     const [data, setData] = useState(null);
@@ -28,7 +30,7 @@ function Quantum() {
     };
 
     return (
-        <Container maxWidth="lg" sx={{ padding: '2rem' }}>
+        
             <div className="p-8">
                 <h2 className="text-2xl font-bold mb-4">Quantum Computing</h2>
 
@@ -50,7 +52,7 @@ function Quantum() {
                     </div>
                 )}
             </div>
-            </Container>
+        
     );
 }
 

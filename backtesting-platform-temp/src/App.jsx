@@ -6,23 +6,21 @@ import Strategies from './pages/Strategies';
 import Backtests from './pages/Backtests';
 import Login from './pages/Login';
 import Quantum from './pages/Quantum';
-import { Container, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 
 function App() {
     return (
         <Router>
-            <Container maxWidth="lg" sx={{ padding: '2rem' }}>
-                <div>
-                    <Navbar />
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/strategies" element={<Strategies />} />
-                        <Route path="/backtests" element={<Backtests />} />
-                        <Route path="/login" element={<Login />} />
-                        <Route path="/quantum" element={<Quantum />} />
-                    </Routes>
-                </div>
-            </Container>
+            <Box sx={{ width: '100vw', height: '100vh', padding: '2rem', boxSizing: 'border-box' }}>
+                <Navbar />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/strategies" element={<Strategies />} />
+                    <Route path="/backtests" element={<Backtests />} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/quantum" element={<Quantum />} />
+                </Routes>
+            </Box>
         </Router>
     );
 }

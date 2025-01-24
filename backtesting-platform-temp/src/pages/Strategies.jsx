@@ -4,7 +4,7 @@ import { Container, Typography } from '@mui/material';
 
 function Strategies() {
     return (
-        <Container maxWidth="lg" sx={{ padding: '2rem' }}>
+        <Container maxWidth={false} sx={{ padding: '2rem' }}>
             <Typography variant="h4" component="h2" gutterBottom align="center">
                 Your Strategies
             </Typography>

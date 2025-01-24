@@ -1,13 +1,26 @@
 import React from 'react';
-import Button from '../components/Button';
+import { Box, Typography } from '@mui/material';
 
-function Home() {
+const Home = () => {
     return (
-        <div className="p-8 text-center">
-            <h2 className="text-2xl font-bold">Welcome to the Backtesting Platform!</h2>
-            <p className="mt-4">Build, test, and refine your trading strategies with ease.</p>
-            <Button className="mt-6">Get Started</Button>
-        </div>
+        <Container maxWidth="lg" sx={{ padding: '2rem' }}>
+            <div>
+            <Box 
+                display="flex" 
+                justifyContent="center" 
+                alignItems="center" 
+                height="100vh"
+                flexDirection="column"
+            >
+                <Typography variant="h4" gutterBottom>
+                    Welcome to the Backtesting Platform
+                </Typography>
+                <Typography variant="h6">
+                    Optimize your trading strategies with ease.
+                </Typography>
+            </Box>
+            </div>
+        </Container>
     );
 }
 

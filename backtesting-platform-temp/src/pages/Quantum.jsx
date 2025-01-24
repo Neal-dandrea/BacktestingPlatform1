@@ -28,27 +28,29 @@ function Quantum() {
     };
 
     return (
-        <div className="p-8">
-            <h2 className="text-2xl font-bold mb-4">Quantum Computing</h2>
+        <Container maxWidth="lg" sx={{ padding: '2rem' }}>
+            <div className="p-8">
+                <h2 className="text-2xl font-bold mb-4">Quantum Computing</h2>
 
-            <button 
-                onClick={fetchData} 
-                className="bg-blue-500 text-white px-4 py-2 rounded mb-4"
-                disabled={loading}
-            >
-                {loading ? 'Fetching...' : 'Fetch Quantum Data'}
-            </button>
+                <button 
+                    onClick={fetchData} 
+                    className="bg-blue-500 text-white px-4 py-2 rounded mb-4"
+                    disabled={loading}
+                >
+                    {loading ? 'Fetching...' : 'Fetch Quantum Data'}
+                </button>
 
-            {loading && <p>Loading data...</p>}
-            {error && <p className="text-red-500">Error: {error}</p>}
+                {loading && <p>Loading data...</p>}
+                {error && <p className="text-red-500">Error: {error}</p>}
 
-            {data && (
-                <div className="border p-4 mt-4">
-                    <h3 className="font-bold mb-2">Response:</h3>
-                    <pre>{JSON.stringify(data, null, 2)}</pre>
-                </div>
-            )}
-        </div>
+                {data && (
+                    <div className="border p-4 mt-4">
+                        <h3 className="font-bold mb-2">Response:</h3>
+                        <pre>{JSON.stringify(data, null, 2)}</pre>
+                    </div>
+                )}
+            </div>
+            </Container>
     );
 }
 

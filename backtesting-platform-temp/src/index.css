@@ -35,6 +35,37 @@ h1 {
   line-height: 1.1;
 }
 
+.d3-tip {
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+svg {
+  font-family: 'Arial', sans-serif;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+path {
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+circle {
+  transition: all 0.3s ease-in-out;
+}
+
+circle:hover {
+  fill: yellow;
+  r: 6;
+}
+
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
